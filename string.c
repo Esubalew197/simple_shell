@@ -17,11 +17,11 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * _strcmp - performs lexicogarphic comparison of two strangs.
+ * _strcmp - performs lexicogarphic comparison of two strangs
  * @s1: the first strang
  * @s2: the second strang
  *
- * Return: negative if s1 < s2, positive if s1 > s2, zero if s1 == s2
+ * Return: negative if s1 < s2, positive if s1 > s2, zero if s1 == s2.
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -56,7 +56,7 @@ char *starts_with(const char *haystack, const char *needle)
  * @dest: the destination buffer
  * @src: the source buffer
  *
- * Return: pointer to destination buffer
+ * Return: pointer to destination buffer.
  */
 char *_strcat(char *dest, char *src)
 {
