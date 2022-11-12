@@ -3,7 +3,7 @@
  *_eputs - prints an input string
  * @str: the string to be printed
  *
- * Return: Nothing
+ * Return: Nothing.
  */
 void _eputs(char *str)
 {
@@ -22,7 +22,7 @@ void _eputs(char *str)
  * @c: The character to print
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * On error , -1 is returned, and errno is set appropriately
  */
 int _eputchar(char c)
 {
@@ -44,7 +44,7 @@ int _eputchar(char c)
  * @fd: The filedescriptor to write to
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * On error, -1 is returned, and errno is set appropriately
  */
 int _putfd(char c, int fd)
 {
