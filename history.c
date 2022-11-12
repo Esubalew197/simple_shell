@@ -3,9 +3,8 @@
  * get_history_file - gets the history file
  * @info: parameter struct
  *
- * Return: allocated string containg history file
+ * Return: allocated string containg history file.
  */
-
 char *get_history_file(info_t *info)
 {
 	char *buf, *dir;
@@ -22,7 +21,6 @@ char *get_history_file(info_t *info)
 	_strcat(buf, HIST_FILE);
 	return (buf);
 }
-
 /**
  * write_history - creates a file, or appends to an existing file
  * @info: the parameter struct
@@ -51,13 +49,13 @@ int write_history(info_t *info)
 	close(fd);
 	return (1);
 }
-
 /**
  * read_history - reads history from file
  * @info: the parameter struct
  *
  * Return: histcount on success, 0 otherwise
  */
+
 int read_history(info_t *info)
 {
 	int i, last = 0, linecount = 0;

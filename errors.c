@@ -17,7 +17,6 @@ void _eputs(char *str)
 		i++;
 	}
 }
-
 /**
  * _eputchar - writes the character c to stderr
  * @c: The character to print
@@ -39,7 +38,6 @@ int _eputchar(char c)
 		buf[i++] = c;
 	return (1);
 }
-
 /**
  * _putfd - writes the character c to given fd
  * @c: The character to print

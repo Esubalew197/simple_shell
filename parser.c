@@ -5,7 +5,8 @@
  * @path: path to the file
  *
  * Return: 1 if true, 0 otherwise
- */
+ *
+*/
 int is_cmd(info_t *info, char *path)
 {
 	struct stat st;
@@ -20,7 +21,6 @@ int is_cmd(info_t *info, char *path)
 	}
 	return (0);
 }
-
 /**
  * dup_chars - duplicates characters
  * @pathstr: the PATH string
@@ -29,6 +29,7 @@ int is_cmd(info_t *info, char *path)
  *
  * Return: pointer to new buffer
  */
+
 char *dup_chars(char *pathstr, int start, int stop)
 {
 	static char buf[1024];
@@ -40,7 +41,6 @@ char *dup_chars(char *pathstr, int start, int stop)
 	buf[k] = 0;
 	return (buf);
 }
-
 /**
  * find_path - finds this cmd in the PATH string
  * @info: the info struct

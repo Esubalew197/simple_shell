@@ -14,7 +14,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	if (!*len) /* if nothing left in the buffer, fill it */
 	{
-		/*bfree((void **)info->cmd_buf);*/
+		/*bfree((void **)info->cmd_buf); */
 		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
@@ -42,12 +42,11 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 	}
 	return (r);
 }
-
 /**
  * get_input - gets a line minus the newline
  * @info: parameter struct
  *
- * Return: bytes read
+ * Return: bytes read.
  */
 ssize_t get_input(info_t *info)
 {
@@ -93,7 +92,7 @@ ssize_t get_input(info_t *info)
  * @buf: buffer
  * @i: size
  *
- * Return: r
+ * Return: r.
  */
 ssize_t read_buf(info_t *info, char *buf, size_t *i)
 {

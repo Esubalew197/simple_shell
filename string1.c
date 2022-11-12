@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * _strcpy - copies a string
- * @dest: the destination
+ * _strcpy - copies a string.
+ * @dest: the destination.
  * @src: the source
  *
- * Return: pointer to destination
+ * Return: pointer to destination.
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -20,7 +20,6 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = 0;
 	return (dest);
 }
-
 /**
  * _strdup - duplicates a string
  * @str: the string to duplicate

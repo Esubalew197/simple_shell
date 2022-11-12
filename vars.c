@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * is_chain - test if current char in buffer is a chain delimeter
- * @info: the parameter struct
- * @buf: the char buffer
+ * is_chain - test if current char in buffer is a chain delimeter.
+ * @info: the parameter struct.
+ * @buf: the char buffer.
  * @p: address of current position in buf
  *
  * Return: 1 if chain delimeter, 0 otherwise
@@ -33,7 +33,6 @@ int is_chain(info_t *info, char *buf, size_t *p)
 	*p = j;
 	return (1);
 }
-
 /**
  * check_chain - checks we should continue chaining based on last status
  * @info: the parameter struct
@@ -67,7 +66,6 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 
 	*p = j;
 }
-
 /**
  * replace_alias - replaces an aliases in the tokenized string
  * @info: the parameter struct
@@ -96,7 +94,6 @@ int replace_alias(info_t *info)
 	}
 	return (1);
 }
-
 /**
  * replace_vars - replaces vars in the tokenized string
  * @info: the parameter struct
@@ -137,7 +134,6 @@ int replace_vars(info_t *info)
 	}
 	return (0);
 }
-
 /**
  * replace_string - replaces string
  * @old: address of old string
