@@ -9,7 +9,6 @@ int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-
 /**
  * is_delim - checks if character is a delimeter
  * @c: the char to check
@@ -43,7 +42,6 @@ int _isalpha(int c)
  *@s: the string to be converted
  *Return: 0 if no numbers in string, converted number otherwise
  */
-
 int _atoi(char *s)
 {
 	int i, sign = 1, flag = 0, output;
