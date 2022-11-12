@@ -5,7 +5,7 @@
  * @buf: address of buffer
  * @len: address of len var
  *
- * Return: bytes read
+ * Return: bytes read.
  */
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
@@ -75,7 +75,7 @@ ssize_t get_input(info_t *info)
 		i = j + 1; /* increment past nulled ';'' */
 		if (i >= len) /* reached end of buffer? */
 		{
-			i = len = 0; /* reset position and length */
+			i = len = 0; /* reset position and length **/
 			info->cmd_buf_type = CMD_NORM;
 		}
 
